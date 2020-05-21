@@ -43,6 +43,15 @@ body {
 
 /* #Global classes */
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  transition: left .5s ease;
+}
+
 #header nav {
   height: 100vh;
 }
@@ -56,6 +65,19 @@ body {
   margin: .7rem 1rem;
   border-bottom: 1px solid var(--color-border);
   text-transform: uppercase;
+}
+
+#header .nav-link:hover {
+  color: var(--color-white)!important;
+}
+
+#header .toggle-button {
+  background: none;
+  color: var(--color-black);
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  border: 1px solid var(--color-border);
 }
 
 .profile-img {
