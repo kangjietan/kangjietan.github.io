@@ -4,15 +4,15 @@ $(document).ready(function(e) {
   $toggle = $('.toggle-button');
   var width = $navbar.width();
 
-  toggleOnClick($win, $navbar, width);
+  toggleLeftNav($win, $navbar, width);
 
-  // resize event
-  $win.resize(function() {
-    toggleOnClick($win, $navbar, width);
-  });
+  // Resize event for window (browser)
+  $win.resize(() => toggleLeftNav($win, $navbar, width));
+
+  $toggle.click(() => $navbar.toggleClass("toggle-left"));
 });
 
-const toggleOnClick = ($win , $navbar, width) => {
+const toggleLeftNav = ($win , $navbar, width) => {
   if ($win.width() < 768) {
     $navbar.css({left: `-${width}px`})
   } else {

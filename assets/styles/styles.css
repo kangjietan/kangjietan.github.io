@@ -21,6 +21,10 @@ body {
   background-color: var(--color-black);
 }
 
+.bg-sf {
+  background-image: url('../images/sf.jpg');
+}
+
 .font-size-40 {
   font-size: 40px;
 }
@@ -43,6 +47,7 @@ body {
 
 /* #Global classes */
 
+/* Left Navigation */
 #header {
   position: fixed;
   top: 0;
@@ -85,3 +90,9 @@ body {
   width: 50%;
   margin-bottom: 10px;
 }
+
+.toggle-left {
+  left: 0 !important;
+  width: 1000px !important;
+}
+
