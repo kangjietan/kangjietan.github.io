@@ -8,8 +8,10 @@ body {
 :root {
   --color-black: #000000;
   --color-white: #FFFFFF;
+  --color-test: rgb(136, 146, 176);
   --color-steel: #0A1612;
-  --color-denim: #1A2930;
+  /* --color-denim: #1A2930; */
+  --color-denim: rgb(10, 25, 47);
   --color-denim-s1: #152126;
   --color-denim-s2: #10191D;
   --color-denim-s3: #0A1013;
@@ -21,6 +23,8 @@ body {
   --font-roboto: 'Roboto', sans-serif;
   --font-condensed: 'Roboto Condensed', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
+  --font-color: rgb(136, 146, 176);
+  --font-color-title: rgb(100, 255, 218);
 }
 
 /* Global classes */
@@ -36,8 +40,12 @@ body {
   background-color: var(--color-steel);
 }
 
-.bg-sf {
-  background-image: url('../images/sf.jpg');
+.text-color-default {
+  color: var(--font-color);
+}
+
+.text-color-title {
+  color: var(--font-color-title);
 }
 
 .font-size-40 {
@@ -146,44 +154,39 @@ body {
 
 /* About */
 .about-area {
-  background-color: var(--color-denim-t1);
+  background-color: var(--color-denim);
   position: relative;
 }
 /* #About */
 
 /* Projects */
 .projects-area {
-  background-color: var(--color-denim-t2);
+  background-color: var(--color-denim);
   position: relative;
 }
 
 .project {
-  height: 45vh;
-}
-
-.project-img {
-  width: 100%;
-  height: 100%;
+  padding-bottom: 20px;
 }
 /* #Projects */
 
 /* Skills */
 .skills-area {
-  background-color: var(--color-denim-t3);
+  background-color: var(--color-denim);
   position: relative;
 }
 /* #Skills */
 
 /* Contact */
 .contact-area {
-  background-color: var(--color-denim-t4);
+  background-color: var(--color-denim);
   position: relative;
 }
 /* #Contact */
 
 /* #Main section */
 
-@media (max-width: 768px) {
+@media (max-width: 812px) {
   .about-desc {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
@@ -193,5 +196,13 @@ body {
   .about-img {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+  }
+
+  .profile-img-box {
+    display: none;
+  }
+
+  .nav-name {
+    display: none;
   }
 }
