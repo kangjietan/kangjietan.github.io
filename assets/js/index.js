@@ -31,3 +31,25 @@ const typed = new Typed('#typed', {
   backSpeed: 50,
   loop: true,
 });
+
+// Fade-in => IntersectionObservers
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.25
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add('appear');
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
