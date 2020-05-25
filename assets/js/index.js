@@ -24,7 +24,7 @@ const resizeLeftNav = ($win , $navbar, width) => {
 
 const typed = new Typed('#typed', {
   strings: [
-    'from Daly City.',
+    'from San Francisco.',
     'a Software Engineer.'
   ],
   typeSpeed: 50,
