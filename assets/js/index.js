@@ -54,6 +54,36 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
+// Highlight navigation links
+const sections = document.querySelectorAll('section');
+
+const sectionOptions = {
+  threshold: 0.7,
+};
+
+const links = ['home-link', 'about-link', 'projects-link', 'skills-link', 'contact-link'];
+
+const highlightOnScroll = new IntersectionObserver(function(entries, highlightOnScroll) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      links.forEach(item => {
+        const link = document.getElementById(item);
+        if (item === `${entry.target.id}-link`) {
+          link.classList.add('hightlight-link');
+        } else {
+          link.classList.remove('hightlight-link');
+        }
+      });
+    }
+  });
+}, sectionOptions);
+
+sections.forEach(section => {
+  highlightOnScroll.observe(section);
+});
+
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
