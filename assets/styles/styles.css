@@ -174,14 +174,15 @@ body {
 .skills-area {
   background-color: var(--color-denim);
   position: relative;
-  padding: 0px 100px;
+  padding: 0px 10px;
+  height: 100vh;
 }
 
 .skill-box {
   display: flex;
   width: 45%;
   border: 1px solid var(--font-color);
-  height: 10vh;
+  height: 15vh;
   padding: 15px;
 }
 
