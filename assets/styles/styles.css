@@ -261,3 +261,7 @@ body {
   }
 }
 /* #Mobile Devices */
+
+li {
+  list-style-type: none;
+}
