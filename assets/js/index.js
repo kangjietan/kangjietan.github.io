@@ -58,7 +58,7 @@ faders.forEach(fader => {
 const sections = document.querySelectorAll('section');
 
 const sectionOptions = {
-  threshold: 0.7,
+  threshold: 0.3
 };
 
 const links = ['home-link', 'about-link', 'projects-link', 'skills-link', 'contact-link'];
@@ -81,8 +81,34 @@ const highlightOnScroll = new IntersectionObserver(function(entries, highlightOn
 }, sectionOptions);
 
 sections.forEach(section => {
+  if (section.id === 'skills') return;
   highlightOnScroll.observe(section);
 });
+
+// Skills section navigation link
+const skillSection = document.querySelector('#skills');
+const skillSectionOptions = {
+  threshold: 0.6
+};
+
+const highlightSectionOnScroll = new IntersectionObserver(function(entries, highlightSectionOnScroll) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      links.forEach(item => {
+        const link = document.getElementById(item);
+        if (item === 'skills-link') {
+          link.classList.add('hightlight-link');
+        } else {
+          link.classList.remove('hightlight-link');
+        }
+      });
+    }
+  });
+}, skillSectionOptions);
+
+highlightSectionOnScroll.observe(skillSection);
 
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
