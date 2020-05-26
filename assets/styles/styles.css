@@ -208,6 +208,10 @@ body {
 .fade-in.appear {
   opacity: 1;
 }
+
+.hightlight-link {
+  border-bottom: 1px solid var(--color-white) !important;
+}
 /* #Transitions */
 
 /* Mobile Devices */
