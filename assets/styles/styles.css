@@ -103,21 +103,12 @@ body {
 }
 
 /* Top right toggle button */
-/* #header .toggle-button {
-  background: none;
-  color: var(--color-white);
-  position: fixed;
-  top: 25px;
-  right: 20px;
-  border: none;
-} */
-
 .toggle-button {
-  color: var(--color-white);
+  color: var(--font-color-title);
   background: none;
   border: none;
   outline: none;
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 20px;
   z-index: 99999;
