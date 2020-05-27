@@ -217,7 +217,7 @@ body {
 
 /* Mobile Devices */
 @media (max-width: 812px) {
-  .about-desc {
+  .about-desc-box {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
     padding-left: 20px;
@@ -250,9 +250,22 @@ body {
 
 @media (max-width: 812px) and (orientation: landscape) {
   .skill-box {
-    /* border: none; */
     margin: auto;
     padding: 5px !important;
+  }
+
+  .about-desc-box {
+    text-align: center;
+    margin-top: 50px !important;
+  }
+
+  .about-desc {
+    font-size: 14px !important;
+    padding: 0px !important;
+  }
+
+  .skills-area {
+    text-align: center;
   }
 }
 
