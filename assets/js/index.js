@@ -88,7 +88,7 @@ sections.forEach(section => {
 // Skills section navigation link
 const skillSection = document.querySelector('#skills');
 const skillSectionOptions = {
-  threshold: 0.6
+  threshold: 0.57
 };
 
 const highlightSectionOnScroll = new IntersectionObserver(function(entries, highlightSectionOnScroll) {
