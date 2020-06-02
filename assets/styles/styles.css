@@ -76,7 +76,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
   transition: left .5s ease;
 }
 
@@ -248,6 +247,10 @@ body {
   .skill-box {
     width: 75vw;
   }
+
+  #header {
+    z-index: 1;
+  };
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
