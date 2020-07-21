@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,400;1,300&display=swap");
 
 body {
   margin: 0;
@@ -7,22 +7,22 @@ body {
 
 :root {
   --color-black: #000000;
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-test: rgb(136, 146, 176);
-  --color-steel: #0A1612;
+  --color-steel: #0a1612;
   /* --color-denim: #1A2930; */
   --color-denim: rgb(10, 25, 47);
   --color-denim-s1: #152126;
-  --color-denim-s2: #10191D;
-  --color-denim-s3: #0A1013;
+  --color-denim-s2: #10191d;
+  --color-denim-s3: #0a1013;
   --color-denim-t1: #395969;
-  --color-denim-t2: #578AA1;
-  --color-denim-t3: #8EB1C2;
-  --color-denim-t4: #C6D8E0;
-  --color-border: #FFFFFF34;
-  --font-roboto: 'Roboto', sans-serif;
-  --font-condensed: 'Roboto Condensed', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
+  --color-denim-t2: #578aa1;
+  --color-denim-t3: #8eb1c2;
+  --color-denim-t4: #c6d8e0;
+  --color-border: #ffffff34;
+  --font-roboto: "Roboto", sans-serif;
+  --font-condensed: "Roboto Condensed", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
   --font-color: rgb(136, 146, 176);
   --font-color-title: rgb(100, 255, 218);
 }
@@ -76,7 +76,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  transition: left .5s ease;
+  transition: left 0.5s ease;
 }
 
 #header nav {
@@ -90,7 +90,7 @@ body {
 
 /* Left navigation links */
 #header .nav-link {
-  margin: .7rem 1rem;
+  margin: 0.7rem 1rem;
   border-bottom: 1px solid var(--color-border);
   text-transform: uppercase;
   font-weight: bold;
@@ -98,7 +98,7 @@ body {
 
 /* Hover effect of links */
 #header .nav-link:hover {
-  color: var(--color-white)!important;
+  color: var(--color-white) !important;
 }
 
 /* Top right toggle button */
@@ -147,7 +147,7 @@ body {
   height: 200px;
   border-radius: 50%;
   margin: auto;
-  background: url('/assets/images/profile.jpg');
+  background: url("/assets/images/profile.jpg");
   background-size: 150%;
   background-position: 40% 10%;
 }
@@ -190,6 +190,7 @@ body {
 .skill-icon {
   margin-right: 10px;
 }
+
 /* #Skills */
 
 /* Contact */
@@ -223,7 +224,7 @@ body {
     padding-bottom: 0px !important;
     padding-left: 20px;
   }
-  
+
   .about-img-box {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
@@ -243,14 +244,14 @@ body {
     flex-wrap: wrap;
     width: auto;
   }
-  
+
   .skill-box {
     width: 75vw;
   }
 
   #header {
     z-index: 1;
-  };
+  }
 }
 
 @media (max-width: 812px) and (orientation: landscape) {
