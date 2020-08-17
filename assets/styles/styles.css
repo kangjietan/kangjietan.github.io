@@ -250,14 +250,6 @@ body {
     padding-bottom: 0px !important;
   }
 
-  .profile-img-box {
-    display: none;
-  }
-
-  .nav-name {
-    display: none;
-  }
-
   .skills-container {
     display: flex;
     flex-direction: column;
@@ -298,6 +290,16 @@ body {
 @media (min-width: 768px) {
   .toggle-button {
     display: none;
+  }
+}
+
+@media (max-height: 375px) {
+  .site-title {
+    display: none;
+  }
+
+  .nav-container {
+    margin-top: 3rem !important;
   }
 }
 /* #Mobile Devices */
